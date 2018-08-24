@@ -14,5 +14,5 @@ This will download latest version of Framework7 (to `/www/framework7/`) and requ
 npm run serve
 ```
 
-App will be opened in browser at `http://localhost:8081/`
+App will be opened in browser at `http://192.168.0.106:8081/`
 

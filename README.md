@@ -16,4 +16,4 @@ npm run serve
 
 App will be opened in browser at `http://192.168.0.106:8081/`
 
-![image](https://github.com/chenzhengz/framework7-stock/master/screenshot/1.jpg)
+![image](https://github.com/chenzhengz/framework7-stock/raw/master/screenshot/1.jpg)

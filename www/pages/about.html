@@ -1,0 +1,101 @@
+<template>
+<div class="page" data-name="about">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="ios-only">Back</span>
+        </a>
+      </div>
+      <div class="title">详情</div>
+    </div>
+  </div>
+  <div class="page-content">
+  <div class="card">
+    <div class="card-header">入库信息</div>
+    <div class="card-content card-content-padding">
+        {{#if infix}}
+        <div class="row">
+            <div class="col"><p>{{infix.name}}</p></div>
+            <div class="col"><p>{{infix.code}}</p></div>
+        </div>       
+        <div class="row">
+          <div class="col-50 tablet-60"><p>{{infix.stardard}}</p></div>
+          <div class="col-50 tablet-66"><p>{{infix.unit}} </p></div>
+          <div class="col-50 tablet-60"><p>{{infix.quantity}}</p></div>
+          <div class="col-50 tablet-66"><p>{{infix.price}} </p></div>
+          <div class="col-50 tablet-60"><p>{{infix.amount}}</p></div>
+          <div class="col-50 tablet-66"><p>{{infix.supplier}} </p></div>
+          <div class="col-50 tablet-60"><p>{{infix.type}}</p></div>
+          <div class="col-50 tablet-60"><p>{{infix.inTime}}</p></div>
+        </div>
+        {{else}} <div class="col-100">暂无数据显示</div>
+        {{/if}}
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">临时出库</div>
+    <div class="card-content card-content-padding">
+        {{#if outtemp}}
+        <div class="row">
+            <div class="col"><p>{{outtemp.name}}</p></div>
+            <div class="col"><p>{{outtemp.number}}</p></div>
+        </div>       
+        <div class="row">
+          <div class="col-50 tablet-60"><p>{{outtemp.applyPerson}}</p></div>
+          <div class="col-50 tablet-66"><p>{{outtemp.applyUnit}} </p></div>
+          <div class="col-50 tablet-60"><p>{{outtemp.code}}</p></div>
+          <div class="col-50 tablet-66"><p>{{outtemp.quantity}} </p></div>
+          <div class="col-50 tablet-60"><p>{{outtemp.outTime}}</p></div>
+          <div class="col-50 tablet-66"><p>{{outtemp.type}} </p></div>
+          <div class="col-100 tablet-33"><p>{{outtemp.applyReason}}</p></div>
+        </div>
+        {{else}} <div class="col-100">暂无数据显示</div>
+        {{/if}}
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">长期出库</div>
+    <div class="card-content card-content-padding">
+        {{#if outsecular}}
+        <div class="row">
+            <div class="col"><p>{{outsecular.name}}</p></div>
+            <div class="col"><p>{{outsecular.number}}</p></div>
+        </div>       
+        <div class="row">
+          <div class="col-50 tablet-60"><p>{{outsecular.applyPerson}}</p></div>
+          <div class="col-50 tablet-66"><p>{{outsecular.applyUnit}} </p></div>
+          <div class="col-50 tablet-60"><p>{{outsecular.code}}</p></div>
+          <div class="col-50 tablet-66"><p>{{outsecular.quantity}} </p></div>
+          <div class="col-50 tablet-60"><p>{{outsecular.outTime}}</p></div>
+          <div class="col-50 tablet-66"><p>{{outsecular.type}} </p></div>
+          <div class="col-100 tablet-33"><p>{{outsecular.applyReason}}</p></div>
+        </div>
+        {{else}} <div class="col-100">暂无数据显示</div>
+        {{/if}}
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">任务出库</div>
+    <div class="card-content card-content-padding">
+        {{#if outtask}}
+        <div class="row">
+            <div class="col"><p>{{outtask.name}}</p></div>
+            <div class="col"><p>{{outtask.number}}</p></div>
+        </div>       
+        <div class="row">
+          <div class="col-50 tablet-60"><p>{{outtask.applyPerson}}</p></div>
+          <div class="col-50 tablet-66"><p>{{outtask.applyUnit}} </p></div>
+          <div class="col-50 tablet-60"><p>{{outtask.code}}</p></div>
+          <div class="col-50 tablet-66"><p>{{outtask.quantity}} </p></div>
+          <div class="col-50 tablet-60"><p>{{outtask.outTime}}</p></div>
+          <div class="col-50 tablet-66"><p>{{outtask.type}} </p></div>
+          <div class="col-100 tablet-33"><p>{{outtask.applyReason}}</p></div>
+        </div>
+        {{else}} <div class="col-100">暂无数据显示</div>
+        {{/if}}
+    </div>
+  </div>
+</div>
+</template>

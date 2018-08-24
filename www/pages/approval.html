@@ -1,0 +1,35 @@
+<template>
+<div class="page" data-name="about">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="ios-only">Back</span>
+        </a>
+      </div>
+      <div class="title">详情</div>
+    </div>
+  </div>
+  <div class="page-content">
+  <div class="card">
+    <div class="card-header">商品信息</div>
+    <div class="card-content card-content-padding"> 
+        <div class="row">
+            <div class="col"><p>{{data.name}}</p></div>
+            <div class="col"><p>{{data.number}}</p></div>
+        </div>       
+        <div class="row">
+          <div class="col-50 tablet-60"><p>{{data.applyPerson}}</p></div>
+          <div class="col-50 tablet-66"><p>{{data.applyUnit}} </p></div>
+          <div class="col-50 tablet-60"><p>{{data.code}}</p></div>
+          <div class="col-50 tablet-66"><p>{{data.quantity}} </p></div>
+          <div class="col-50 tablet-60"><p>{{data.outTime}}</p></div>
+          <div class="col-50 tablet-66"><p>{{data.type}} </p></div>
+          <div class="col-100 tablet-33"><p>{{data.applyReason}}</p></div>
+        </div>
+    </div>
+    <div class="card-footer"><a href="#" onclick="pass('{{data.id}}','{{data.tab}}')" class="link">通过</a><a href="#" onclick="nopass('{{data.id}}','{{data.tab}}')"  class="link">不通过</a></div>
+  </div>
+</div>
+</template>

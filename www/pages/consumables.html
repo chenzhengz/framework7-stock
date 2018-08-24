@@ -1,0 +1,60 @@
+<template>
+<div class="page" data-name="about">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="#" class="link back">
+          <i class="icon icon-back"></i>
+          <span class="ios-only">Back</span>
+        </a>
+      </div>
+      <div class="title">详情</div>
+    </div>
+  </div>
+  <div class="page-content">
+  <div class="card">
+    <div class="card-header">入库信息</div>
+    <div class="card-content card-content-padding">
+        {{#if indata}}
+        <div class="row">
+            <div class="col"><p>{{indata.name}}</p></div>
+            <div class="col"><p>{{indata.code}}</p></div>
+        </div>       
+        <div class="row">
+          <div class="col-50 tablet-60"><p>{{indata.stardard}}</p></div>
+          <div class="col-50 tablet-66"><p>{{indata.unit}} </p></div>
+          <div class="col-50 tablet-60"><p>{{indata.quantity}}</p></div>
+          <div class="col-50 tablet-66"><p>{{indata.price}} </p></div>
+          <div class="col-50 tablet-60"><p>{{indata.amount}}</p></div>
+          <div class="col-50 tablet-66"><p>{{indata.supplier}} </p></div>
+          <div class="col-50 tablet-60"><p>{{indata.type}}</p></div>
+          <div class="col-50 tablet-60"><p>{{indata.inTime}}</p></div>
+        </div>
+        {{else}} <div class="col-100">暂无数据显示</div>
+        {{/if}}
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">出库信息</div>
+    <div class="card-content card-content-padding">
+        {{#if outdata}}
+        <div class="row">
+            <div class="col"><p>{{outdata.name}}</p></div>
+            <div class="col"><p>{{outdata.number}}</p></div>
+        </div>       
+        <div class="row">
+          <div class="col-50 tablet-60"><p>{{outdata.applyPerson}}</p></div>
+          <div class="col-50 tablet-66"><p>{{outdata.applyUnit}} </p></div>
+          <div class="col-50 tablet-60"><p>{{outdata.code}}</p></div>
+          <div class="col-50 tablet-66"><p>{{outdata.quantity}} </p></div>
+          <div class="col-50 tablet-60"><p>{{outdata.outTime}}</p></div>
+          <div class="col-50 tablet-66"><p>{{outdata.type}} </p></div>
+          <div class="col-100 tablet-33"><p>{{outdata.applyReason}}</p></div>
+        </div>
+        {{else}} <div class="col-100">暂无数据显示</div>
+        {{/if}}
+    </div>
+  </div>
+  </div>
+</div>
+</template>
